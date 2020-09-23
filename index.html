@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Students list</title>
+      <link rel="stylesheet"
+         href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+         crossorigin="anonymous">
+      <link rel="stylesheet" href="./css/main.css">
+   </head>
+   <body>
+      <div class="bg-primary py-2 mb-3 text-center text-white">
+         <h1>Students list app</h1>
+      </div>
+
+      <div class="container">
+         <form class="row mb-5">
+            <div class="col-md-6">
+               <div class="form-group matricule">
+                  <label for="matricule">Numéro matricule</label>
+                  <input type="text" class="form-control" name="matricule">
+                  <div class="invalid-feedback"></div>
+               </div>
+
+               <div class="form-group lastname">
+                  <label for="lastname">Nom</label>
+                  <input type="text" class="form-control"
+                     name="lastname">
+                  <div class="invalid-feedback"></div>
+               </div>
+
+               <div class="form-group firstname">
+                  <label for="firstname">Prénom(s)</label>
+                  <input type="text" class="form-control"
+                     name="firstname">
+                  <div class="invalid-feedback"></div>
+               </div>
+            </div>
+            <div class="col-md-6">
+               <div class="form-group level">
+                  <label for="level">Niveau</label>
+                  <input type="number" class="form-control"
+                     name="level">
+                  <div class="invalid-feedback"></div>
+               </div>
+
+               <div class="form-group age">
+                  <label for="age">Age</label>
+                  <input type="number" class="form-control"
+                     name="age">
+                  <div class="invalid-feedback"></div>
+               </div>
+
+               <div class="form-group gender">
+                  <label>Genre</label>
+                  <div class="form-group">
+                     <div class="custom-control custom-radio
+                        custom-control-inline">
+                        <input type="radio" name="gender" value="Masculin"
+                           class="custom-control-input" id="male">
+                        <label class="custom-control-label" for="male">Homme</label>
+                     </div>
+                     <div class="custom-control custom-radio
+                        custom-control-inline">
+                        <input type="radio" name="gender" value="Féminin"
+                           class="custom-control-input" id="female">
+                        <label class="custom-control-label" for="female">Femme</label>
+                     </div>
+                  </div>
+               </div>
+
+            </div>
+            <div class="col-12">
+               <button type="submit" class="btn btn-primary">Sauvegarder</button>
+               <button type="reset" class="btn btn-secondary">Réinitialiser</button>
+            </div>
+         </form>
+
+         <div class="row">
+            <table class="table table-bordered table-hover">
+               <thead>
+                  <tr>
+                     <th scope="col">Matricule</th>
+                     <th scope="col">Nom</th>
+                     <th scope="col">Prénoms</th>
+                     <th scope="col">Genre</th>
+                     <th scope="col">Niveau</th>
+                     <th scope="col">Age</th>
+                     <th scope="col"></th>
+                  </tr>
+               </thead>
+               <tbody></tbody>
+            </table>
+         </div>
+      </div>
+
+      <script src="./js/form-control.js"></script>
+      <script src="./js/constants.js"></script>
+      <script src="./js/student.js"></script>
+      <script src="./js/radio-buttons.js"></script>
+      <script src="./js/main.js"></script>
+   </body>
+</html>
